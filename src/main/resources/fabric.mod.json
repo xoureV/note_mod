@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "note",
+	"version": "${version}",
+	"name": "Note",
+	"description": "Simple note mod",
+	"authors": [
+		"xoure"
+	],
+	"contact": {
+		"homepage": "*",
+		"sources": "https://github.com/xoureV/note"
+	},
+	"license": "GNU",
+	"icon": "assets/note/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.first.note.Note"
+		],
+		"fabric-datagen": [
+			"net.first.note.NoteDataGenerator"
+		],
+		"client": [
+			"net.first.note.NoteClient"
+		]
+	},
+	"mixins": [
+		"note.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
